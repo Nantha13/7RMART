@@ -26,7 +26,7 @@ public class HomeTest extends Base{
   home.ClickOnAdmin_btn();
   home.ClickOnLogout_btn();
   boolean isSignInButtonDisplayed=home.isSignInButtonDisplayed();
-  Assert.assertTrue( isSignInButtonDisplayed, "Logout failed");
+  Assert.assertTrue( isSignInButtonDisplayed, "Logout is failed");
 
   
  
