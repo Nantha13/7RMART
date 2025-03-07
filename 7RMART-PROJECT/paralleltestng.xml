@@ -6,13 +6,13 @@
 <listener class-name="listeners.Listeners"></listener>
 </listeners>
   <test thread-count="5" name="Test">
-  <classes>
-  <class name="testscripts.LoginTest">
-   <methods>
-      <include name="verifyUserLoginWithValidUsernameAndInvalidPassword"></include>
-   
+    <classes>
+     
+      <class name="testScript.LoginTest">
+      <methods>
+      <include name="verifyUserLoginWithValidUsernameAndValidPassword"></include>
       </methods>
-  </class>
-  </classes>
+      </class>
+      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

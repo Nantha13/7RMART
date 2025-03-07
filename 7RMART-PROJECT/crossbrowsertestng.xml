@@ -4,10 +4,9 @@
   <test thread-count="5" name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="TestScript.LoginTest">
+      <class name="testscripts.LoginTest">
       <methods>
-      <include name="VerifyUserIsAbleToAddSubcategory"></include>
-      <include name="VerifyUserIsAbleToSearch"></include>  
+      <include name="verifyUserLoginWithValidUsernameAndValidPassword"></include>
    </methods>
    </class>
    </classes>
@@ -15,10 +14,9 @@
    <test thread-count="5" name="FirefoxTest">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="TestScript.LoginTest">
+      <class name="testscripts.LoginTest">
       <methods>
-      <include name="VerifyUserIsAbleToAddSubcategory"></include>
-      <include name="VerifyUserIsAbleToSearch"></include>  
+      <include name="verifyUserLoginWithValidUsernameAndValidPassword"></include>
    </methods>
    </class>
    </classes>

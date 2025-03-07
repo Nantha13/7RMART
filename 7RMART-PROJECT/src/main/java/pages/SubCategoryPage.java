@@ -30,8 +30,9 @@ public class SubCategoryPage {
 	@FindBy(xpath="//select[@name='un']") WebElement dropdowncategory ;
 	@FindBy(xpath="//input[@type='text']") WebElement Search_Subcategory;
 	@FindBy(xpath="//button[@name='Search']") WebElement Search_btn;
-	@FindBy(xpath="//button[@data-dismiss='alert']") WebElement Alert_subcategory;
-	
+//	@FindBy(xpath="//button[@data-dismiss='alert']") WebElement Alert_subcategory;
+//	@FindBy(xpath="//*[text()=' Alert!']")  WebElement Alert_subcategory;
+	@FindBy(xpath="//*[text()=' Alert!']") private WebElement alertSubCategory;
 	
 	 public void selectsubcategory() {
 		 SubcategoryMenu.click();
@@ -78,9 +79,13 @@ public class SubCategoryPage {
 		{
 		 Search_btn.click();
 		}
-	 public boolean isAlertDisplayed()
+	/* public boolean isAlertDisplayed()
 		{
 			return Alert_subcategory.isDisplayed();
+		}*/
+	 public  boolean AlertIsDisplayedSubCategoryCreation()
+		{
+			return alertSubCategory.isDisplayed();
 		}
 	 
 }
