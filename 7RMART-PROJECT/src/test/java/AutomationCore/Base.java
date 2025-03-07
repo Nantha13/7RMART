@@ -35,7 +35,7 @@ public class Base {
 		}
 		else
 		{
-			throw new Exception("An Invalid Browser");
+			throw new Exception("Invalid Browser");
 		}
 		driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
